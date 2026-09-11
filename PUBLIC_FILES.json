@@ -1,0 +1,13 @@
+[
+  ".gitignore",
+  "CAPABILITIES.md",
+  "LICENSE",
+  "PUBLIC_FILES.json",
+  "README.md",
+  "pyproject.toml",
+  "src/dagster_fxmacrodata/__init__.py",
+  "src/dagster_fxmacrodata/assets.py",
+  "src/dagster_fxmacrodata/resource.py",
+  "src/dagster_fxmacrodata/py.typed",
+  "tests/test_integration.py"
+]

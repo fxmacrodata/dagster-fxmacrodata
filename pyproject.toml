@@ -1,0 +1,42 @@
+[build-system]
+requires = ["hatchling>=1.31,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dagster-fxmacrodata"
+version = "0.1.0"
+description = "FXMacroData subscription data as native Dagster resources, assets and ops"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE"]
+dependencies = ["dagster>=1.13.21,<1.14", "fxmacrodata-public-client==0.1.1"]
+
+[project.urls]
+Homepage = "https://fxmacrodata.com/?utm_source=github&utm_medium=referral&utm_campaign=dagster&utm_content=readme"
+Documentation = "https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=dagster&utm_content=docs"
+
+[project.optional-dependencies]
+test = ["pytest>=8", "pytest-xdist>=3", "ruff", "pyright"]
+
+[tool.hatch.build]
+ignore-vcs = true
+exclude = ["**/__pycache__/**", "**/*.pyc"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dagster_fxmacrodata"]
+
+[tool.hatch.build.targets.sdist]
+include = [".gitignore", "src/dagster_fxmacrodata/**", "tests/*.py", "README.md", "CAPABILITIES.md", "LICENSE", "pyproject.toml", "PUBLIC_FILES.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"
+
+[tool.pyright]
+include = ["src"]
+typeCheckingMode = "basic"
