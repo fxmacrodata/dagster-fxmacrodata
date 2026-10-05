@@ -13,11 +13,12 @@ from fxmacrodata_public.transport import redact_text
 from pydantic import Field, PrivateAttr, SecretStr
 
 PROVIDER_URL = (
-    "https://fxmacrodata.com/?utm_source=github&utm_medium=referral&utm_campaign=dagster&utm_content=docs"
+    "https://fxmacrodata.com/?utm_source=dagster&utm_medium=integration"
+    "&utm_campaign=dagster-fxmacrodata&utm_content=homepage"
 )
 DOCUMENTATION_URL = (
-    "https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral"
-    "&utm_campaign=dagster&utm_content=docs"
+    "https://fxmacrodata.com/documentation/reference?utm_source=dagster&utm_medium=integration"
+    "&utm_campaign=dagster-fxmacrodata&utm_content=docs"
 )
 
 

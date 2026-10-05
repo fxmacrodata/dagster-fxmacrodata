@@ -349,14 +349,15 @@ def test_complete_history_zero_offset_preserves_budget_and_source(fake_client):
 
 def test_all_materialization_site_links_are_attributed():
     result = FXMacroDataResult("health", {}, "https://api.fxmacrodata.com/v1/test")
-    for name in ["fxmacrodata/provider", "fxmacrodata/documentation"]:
+    placements = {"fxmacrodata/provider": "homepage", "fxmacrodata/documentation": "docs"}
+    for name, content in placements.items():
         url = result.metadata()[name].value
         query = parse_qs(urlsplit(url).query)
         assert query == {
-            "utm_source": ["github"],
-            "utm_medium": ["referral"],
-            "utm_campaign": ["dagster"],
-            "utm_content": ["docs"],
+            "utm_source": ["dagster"],
+            "utm_medium": ["integration"],
+            "utm_campaign": ["dagster-fxmacrodata"],
+            "utm_content": [content],
         }
 
 
