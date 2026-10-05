@@ -2,7 +2,7 @@
 
 Bring your FXMacroData subscription into Dagster for repeatable macro research, cross-currency history and release-aware data pipelines. The resource and asset/op factories make FXMacroData data available to ordinary Dagster jobs, schedules and downstream assets.
 
-**[Subscribe to FXMacroData](https://fxmacrodata.com/subscribe?utm_source=github&utm_medium=referral&utm_campaign=dagster&utm_content=subscribe)** for broader indicator coverage and full available history. Public USD catalogue, recent history and release-calendar access let you evaluate the integration before connecting your subscription.
+**[Subscribe to FXMacroData](https://fxmacrodata.com/subscribe?utm_source=github&utm_medium=referral&utm_campaign=dagster-fxmacrodata&utm_content=subscribe)** for broader indicator coverage and full available history. Public USD catalogue, recent history and release-calendar access let you evaluate the integration before connecting your subscription.
 
 ## Install
 
@@ -85,7 +85,7 @@ All 29 REST operations and 50 hosted MCP tools have both native asset and op pat
 
 Use `complete_history=True` with offset-paginated REST operations to gather every page while retaining page metadata. Complete history starts at offset zero; nonzero offsets and page-number parameters are rejected before a request. `max_pages` bounds the retrieval and incomplete histories raise an error. Other operations preserve their documented pagination arguments. `stream_events` captures a bounded number of events over a bounded period; it is not a background listener. MCP visual resources remain available in the payload, but Dagster does not render MCP Apps.
 
-See the [operation matrix](CAPABILITIES.md) and [API reference](https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=dagster&utm_content=docs). [FXMacroData](https://fxmacrodata.com/?utm_source=github&utm_medium=referral&utm_campaign=dagster&utm_content=readme) website links carry static referral tags; API and MCP requests carry no tracking tags, and the integration sends no analytics events.
+See the [operation matrix](CAPABILITIES.md) and [API reference](https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=dagster-fxmacrodata&utm_content=docs). [FXMacroData](https://fxmacrodata.com/?utm_source=github&utm_medium=referral&utm_campaign=dagster-fxmacrodata&utm_content=readme) website links carry static referral tags; API and MCP requests carry no tracking tags, and the integration sends no analytics events.
 
 ## Development
 

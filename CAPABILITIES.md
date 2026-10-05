@@ -114,4 +114,4 @@ event metadata contains only operation, count and static public provider/docs li
 - Dagster's IO manager and downstream code determine storage, retention and access
   for subscriber data. The adapter adds no sample rows or input values to event metadata.
 
-[FXMacroData documentation](https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=dagster&utm_content=docs)
+[FXMacroData documentation](https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=dagster-fxmacrodata&utm_content=docs)

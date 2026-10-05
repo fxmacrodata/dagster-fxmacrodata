@@ -13,8 +13,8 @@ license-files = ["LICENSE"]
 dependencies = ["dagster>=1.13.21,<1.14", "fxmacrodata-public-client==0.1.1"]
 
 [project.urls]
-Homepage = "https://fxmacrodata.com/?utm_source=github&utm_medium=referral&utm_campaign=dagster&utm_content=readme"
-Documentation = "https://fxmacrodata.com/documentation/reference?utm_source=github&utm_medium=referral&utm_campaign=dagster&utm_content=docs"
+Homepage = "https://fxmacrodata.com/?utm_source=pypi&utm_medium=referral&utm_campaign=dagster-fxmacrodata&utm_content=readme"
+Documentation = "https://fxmacrodata.com/documentation/reference?utm_source=pypi&utm_medium=referral&utm_campaign=dagster-fxmacrodata&utm_content=docs"
 
 [project.optional-dependencies]
 test = ["pytest>=8", "pytest-xdist>=3", "ruff", "pyright"]
